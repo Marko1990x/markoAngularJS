@@ -20,11 +20,18 @@
             <p>{{zanimacija1}}</p>
             <p>The property "carname" was made in the controller, and can be referred to in the view by using the {{ }} brackets.</p>
 
+            <div ng-repeat="x in slika">
+                <p>{{x.naziv}}</p>
+                <img ng-src="{{x.img}}"> <!--ovo sada radi kako treba-->
+            </div>
     </div>
-    <div class="prvi" ng-controller="version2">
-        <div ng-repeat="x of slika"></div>
 
+  
+    <div class="prvi" ng-controller="cont2">
+            <p>click the button to fill the form</p>
+            <button ng-click="fill()">Fill the form in console</button>
     </div>
+    
 
     
     
